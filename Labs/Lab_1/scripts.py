@@ -5,13 +5,14 @@ def versionCheck():
 
 # 
 def get():
-    r = requests.get("http://www.google.com/")
-    print(r.text)
+    response = requests.get("http://www.google.com/")
+    print(response.text)
     
 
 def rawURL():
-    url = ""
+    url = "https://raw.githubusercontent.com/Head8che/CMPUT404/master/Labs/Lab_1/scripts.py"
+    response = requests.get("http://www.google.com/")
+    print(response.text)
 
 
-get()
-versionCheck()
+rawURL()
