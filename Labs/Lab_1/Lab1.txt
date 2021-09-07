@@ -22,3 +22,4 @@ The status that is returned for http://google.com/teapot is [301].The same code 
 A few things have changed as REMOTE_PORT Number has changed from 60142 to 6143; REMOTE_METHOD has also changed from GET to POST; the UNIQUE_ID has also changed. POST is used to send data to the server from an HTTP client. The "-X" is used to override the request method which in our case was used with POST.
 
 8. What is the raw URL to your Python script on GitHub?
+https://raw.githubusercontent.com/Head8che/CMPUT404/master/Labs/Lab_1/scripts.py
