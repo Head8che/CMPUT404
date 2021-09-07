@@ -1,0 +1,24 @@
+Git and Github
+1. What is your Github URL?
+https://github.com/Head8che
+
+Virtualenv
+2. What version is the requests library installed on the system?
+version 2.26.0
+
+3. What version is the requests library installed in the virtualenv?
+2.26.0
+
+4.What is the difference between the virtual environment and the not virtual environment python?
+The virtual environment creates a isolated python environment, which contains the necessary libraries, scripts and executables to use for the project. It is used to manage python packages for different projects. A non virtual environment in python will put installed packages along side the python interpreter, which will allow a single version of a given package to be installed with the python installation. This will cause issues when different projects require its own different set of python packages/dependencies.
+
+5 What status code is returned for http://google.com ? What URL must you visit to get a 200 status code?
+The status that is returned for http://google.com is [301], which indicates to us that there is a url redirection. This can be seen as http://google.com is temporarily moved to the url location http://www.google.com/, which returns a [200].
+
+6. What status code is returned for http://google.com/teapot? Is it the one returned by curl -i or curl -iL? What happens when you curl http://www.google.com/teapot?
+The status that is returned for http://google.com/teapot is [301].The same code [301] is returned by curl -I or curl -uL. For curl http://www.google.com/teapot a status code of [418] is returned.
+
+7. What changed in the output of https://webdocs.cs.ualberta.ca/~hindle1/1.py when you used -X POST? What is this method useful for?
+A few things have changed as REMOTE_PORT Number has changed from 60142 to 6143; REMOTE_METHOD has also changed from GET to POST; the UNIQUE_ID has also changed. POST is used to send data to the server from an HTTP client. The "-X" is used to override the request method which in our case was used with POST.
+
+8. What is the raw URL to your Python script on GitHub?
