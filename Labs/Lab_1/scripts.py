@@ -11,7 +11,7 @@ def get():
 
 def rawURL():
     url = "https://raw.githubusercontent.com/Head8che/CMPUT404/master/Labs/Lab_1/scripts.py"
-    response = requests.get("http://www.google.com/")
+    response = requests.get(url)
     print(response.text)
 
 
