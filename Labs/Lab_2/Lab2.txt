@@ -1,0 +1,25 @@
+# Some of the code has been constructed from the TA lab session.
+
+Question 1: How do you specify a TCP socket in Python?
+A TCP socket is specified in python with the function Socket.socket "socket.socket(family=AF_INET, type=SOCK_STREAM, proto=0, fileno=None)".
+The address family should be AF_INET (the default) and the socket type should be SOCK_STREAM (the default).
+Therefore, when the socket.socket() is created, the specified arguments (socket.AF_INET and socket.SOCK_STREAM) can be seen on line 8 of client.py
+
+Question 2: What is the difference between a client socket and a server socket in Python?
+client socket: The client side will try to connect to the all addresses returned as a result of the name resolution, and sends traffic to the first one connected successfully.
+It initiates a connection and listens to a connected server socket.
+server socket: The server side will listen to the first address family available (it should listen to both instead).
+It listens to the client connection without starting a connection.
+
+Question 3: How do we instruct the OS to let us reuse the same bind port?
+By using s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+Question 4: What information do we get about incoming connections?
+Connected by ('127.0.0.1', 52930)
+The IP address of the client that is connected and the port.
+
+Question 5: What is returned by recv() from the server after it is done sending the HTTP request?
+recv returns the data from the request in byte string format, consisting of the data from the client.
+
+Question 6: Provide a link to your code on github?
+https://github.com/Head8che/CMPUT404/tree/master/Labs/Lab_2
