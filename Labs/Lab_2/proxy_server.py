@@ -19,8 +19,8 @@ def get_remote_ip(host):
     return remote_ip
 
 def main():
-    extern_host = 'www.google.com'
-    extern_port = 80
+    external_host = 'www.google.com'
+    external_port = 80
     
     # TCP socket being created
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as proxy_start:
@@ -37,11 +37,11 @@ def main():
             print("Connected by ", addr)
 
             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as proxy_end:
-                print(f"Connecting to {extern_host}")
-                remote_ip = get_remote_ip(extern_host)
+                print(f"Connecting to {external_host}")
+                remote_ip = get_remote_ip(external_host)
 
                 # connect proxy_end
-                proxy_end.connect((remote_ip, extern_port))
+                proxy_end.connect((remote_ip, external_port))
 
                 # gets data from host
                 send_full_data = conn.recv(BUFFER_SIZE)
