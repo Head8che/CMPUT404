@@ -1,6 +1,5 @@
 # CMPUT404 ##
 
-**Required dependencies:**
 **Lab 1:**
 Virtualenv & cURL
 
