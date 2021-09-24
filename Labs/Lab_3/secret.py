@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
-import cgi
-import cgitb
+import cgi, cgitb
 cgitb.enable()
 
 class FollowingTheTAsInstructionsError(Exception):
@@ -11,9 +10,7 @@ class FollowingTheTAsInstructionsError(Exception):
             "and to delete this error!"
         ))
 
-# Delete this line:
-raise FollowingTheTAsInstructionsError
-
 # Edit the following two lines:
-username = "<pick a username here>"
-password = "<pick a password here>"
+Username = "user_Name"
+Password = "pass_Word"
+
