@@ -9,6 +9,7 @@ print("<p>This is a Test</p>")
 
 print() 
 print(os.environ)
+# print(json.dumps(dict(os.environ)))
 
 jsonObject = json.dumps(dict(os.environ), indent = 4)
 print(jsonObject)
