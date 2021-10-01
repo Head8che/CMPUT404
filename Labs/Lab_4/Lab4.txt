@@ -1,0 +1,37 @@
+ 	
+Question 1: What is the link to your GitHub repository for this lab?
+https://github.com/Head8che/CMPUT404/tree/master/Labs/Lab_4
+
+Question 2: After starting a brand new Django application and running the run server command, what does the browser show you?
+It had started the development server locally at http://127.0.0.1:8000/
+What is displayed on my browsers is the default debug Django page with the rocket ship animation with the following text being displayed below it "The install worked successfully! Congratulations!"
+
+Question 3: After creating the first view within polls, what does the browser show you when navigating to / and to /polls respectively?
+A plain webpage with the following text being displayed: "Hello, world. You're at the polls index."
+
+Question 4: What is a Django migration and why do we need them?
+We need Django migrations to propagating changes we made to our models. This is how we manage the database schema changes.
+
+Question 5: What do you see after you log into the Django administration site? From a high level, how do you get custom models to appear in the Django admin page?
+Upon logging in with the superuser credentials, we are directed to the Django administration where we can make changed to AUTHENTICATION AND AUTHORIZATION.
+The custom models appear in the Django admin page, as a result of the models class that we established in models.py, which we then applied the models in admin.py.
+
+Question 6: What do you see when you go to /polls/38/ in your browser?
+What about /polls/38/results and /polls/38/vote? What happens when you don’t put a number, and instead use a string?
+How would you modify the urls.py file to allow arbitrary alphabetic characters?
+/polls/38 displays some text on a plain webpage. The text displayed is: You're looking at question 38.
+/polls/38/results returns a plain webpage with the follow text: "You're looking at the results of question 38."
+/polls/38/vote returns a plain webpage with the follow text: "You're voting on question 38."
+Using a string instead of a number will result in a 404 Page Not Found Error.
+A solution to this error would be to change the <int:question_id> to <str:question_id>.
+
+
+Question 7: Why is it a bad idea to Hard-coding urls into the templates?
+Hard-coding urls into the templates will require us to manually update the template file to make changes to just urls.
+
+
+Question 8: What are the benefits of using Django's generic views over writing views 'the hard way'? When should you use a generic view and when shouldn't you use a generic view?
+Django's generic views are easy to use. They help help prevent repetitive, boilerplate code when you repeatedly use similar code in several views.
+Common patters/idioms and abstract them so they can be quickly be written in common views of data.
+If you're a beginner or someone who overrides methods/functions of a generic view, then it's probable best to use an alternative method (Functional/Template) views.
+overall, if your view needs to be manipulated/tailored differently, then you may need to do it the traditional hard way.
