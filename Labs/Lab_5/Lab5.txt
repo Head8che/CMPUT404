@@ -1,0 +1,20 @@
+Question 1: What are some of the benefits of using a static site generator? What are some disadvantages?
+
+Advantages
+
+Time - It is super easy to setup/deploy. 
+
+Cost- They are cheaper to develop
+
+Hosting- Static webpages typically have cheaper hosting servers.
+
+Fast Data Transferring - Static Websites do not have complex structures
+
+
+Disadvantages
+
+Limited Functionalities - Very limited functionalities in comparison to dynamic webpages.
+
+
+Question 2: What is the link to your GitHub pages hosted static site?
+https://head8che.github.io

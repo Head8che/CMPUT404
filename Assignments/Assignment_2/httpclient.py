@@ -41,6 +41,7 @@ class HTTPClient(object):
         return None
 
     def get_code(self, data):
+        print(data)
         return None
 
     def get_headers(self,data):
@@ -70,7 +71,45 @@ class HTTPClient(object):
     def GET(self, url, args=None):
         code = 500
         body = ""
-        return HTTPResponse(code, body)
+
+        components = urllib.parse.urlparse(url)
+        
+        port = components.port
+        if port == None:
+            # if there's no host, set port to 80 as default
+            port = 80
+
+        host = components.hostname
+
+        path = components.path
+        if len(path) == 0:
+            path = "/"
+
+        # host, port from url
+        self.connect(host, port)
+
+        # make up payload string, format with path and host.
+        payload = f'GET {path} HTTP/1.1\r\nHost: {host}\r\nAccept: /*/\r\nConnection: Close\r\n\r\n'
+
+        # payload goes in here to be sent
+        self.sendall(payload)
+
+        result = self.recvall(self.socket)
+        
+        # status code (within headers)
+        code = self.get_code(result)
+
+        # headers
+        headers = self.get_headers(result)
+
+        # body
+        body = self.get_body(result)
+        print(body)
+
+        self.close()
+
+        return HTTPResponse(int(code), body)
+
 
     def POST(self, url, args=None):
         code = 500
@@ -85,6 +124,8 @@ class HTTPClient(object):
     
 if __name__ == "__main__":
     client = HTTPClient()
+    response = HTTPResponse()
+    client.GET()
     command = "GET"
     if (len(sys.argv) <= 1):
         help()
