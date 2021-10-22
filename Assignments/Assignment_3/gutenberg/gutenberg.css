@@ -1,0 +1,49 @@
+body {
+    background: oldlace;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+    color: saddlebrown;
+  }
+
+  h1,h2,h3,h4,h5,h6{
+	text-align: center;
+	font-family: 'Georgia',serif;
+	color:#b8860b;
+	border-color: #b8860b;
+	border-style: double;
+	border-width: 4px;
+	border-radius:5px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+p{
+	text-align: justify;
+	margin-top: 3em;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+pre{
+	text-align: center;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+img {
+    border: 1px solid #4d4240;
+    border-radius: 1.5%;
+    max-width: 50%;
+}
+
+figcaption {
+    text-align: center;
+    font-style: bold;
+
+}
+
+a {
+    color: #a94747;
+    font-size: 1.4em;
+}
