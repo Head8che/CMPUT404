@@ -22,3 +22,7 @@ repository and (C) 2013 Abram Hindle visibile in the text.
 Code is licensed under the Apache 2.0 license.
 
 
+Changes/Updates
+=================
+A CSS file was constructed  along with the use of inline css.
+Changes to font size and background color have been also made.

@@ -1,0 +1,53 @@
+img {
+    display: ruby-base;
+    float: right;
+    width: 15%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+  }
+  
+  body {
+      color: blue;
+      background-image: url("images/ugly101.jpg");
+    }
+
+h1 {
+    color: #7FDBFF;
+    text-align: center;
+  }
+
+h2 {
+    color: #ffdf00;
+    text-align: center;
+  }
+  
+nav {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+.nav-li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+
+section.content {
+    color: Red;
+    float: left;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+aside {
+    color: orange;
+    float: right;
+    width: 40%;
+    padding: 10, 10, 5, 10;
+    margin-left: 15px;
+  }

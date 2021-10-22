@@ -1,9 +1,10 @@
 body {
-    background: oldlace;
+    background: #b8860b;
     margin-left: 25%;
     margin-right: 25%;
     text-align: justify;
     color: saddlebrown;
+    font-family: 'Georgia',serif;
   }
 
   h1,h2,h3,h4,h5,h6{
@@ -19,6 +20,7 @@ body {
 }
 
 p{
+    font-family: 'Georgia',serif;
 	text-align: justify;
 	margin-top: 3em;
 	margin-left: 25%;
