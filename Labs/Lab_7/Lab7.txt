@@ -1,13 +1,33 @@
-Question 0: What is the URL of your python flask_restfull code on github???
+Question 0: What is the URL of your python flask_restfull code on github?
+https://github.com/Head8che/CMPUT404/tree/master/Labs/Lab_7
 
 Question 1: How are Flask and Django different? What does Django provide for you that Flask does not?
+Django already comes with an admin panel. 
+Django's admin system enables quick CRUD operations against models, which allows the developer to build an application without requiring to write more code or any external input.
+Django offers dynamic HTML pages, provides many out of box features and reduces time to build complex applications. secure framework and automatically manages standard security features like user account management, transaction management, cross-site request forgery, clickjacking, and more.
+Overall, Django contains more features opposed to flask. However, Flask is easier to use even though you have to build your models.
+https://hackr.io/blog/flask-vs-django
+https://www.guru99.com/flask-vs-django.html
 
 Question 2: What does REST stand for? When I say something is RESTful, what does that mean?
+Representaional State Transfer. RESTful means that the design of a server is modular, meaning that it won't impact anything if changes are made to the server.
 
 Question 3: What does CRUD stand for? For each letter in CRUD, give the associated HTTP method.
+CREATE (POST), READ(GET), UPDATE(PUT), DELETE(DELETE)
 
 Question 4: What do HTTP 1XX Status Codes mean? HTTP 2xx? HTTP 3xx? HTTP 4xx? HTTP 5xx?
+1XX: Informational Response, 2XX: Successful Response, 3XX: Redirectional Response, 4XX: Client Error Response, 5XX: Server Error Response
 
 Question 5: What is an XSS attack? Provide one way a site can be vulneratble to an XSS attack.
+A XSS is a Cross Site Scripting when a website that is a type of a type of injection attack that injects malicious code into otherwise safe websites.
+Since the website can be altered it can have a large impact to both the cleint and server side of the website. One way this can occur is when the injection contains some malicious code onto a website
+and a user interacts with the code in a a way that could obtain the users's cookie/token and impersonate as if they are that said user.
+https://www.veracode.com/security/xss
+https://owasp.org/www-community/attacks/xss/
 
 Question 6: What does CORS stand for? What situation in web application development will you need to implement CORS protection?
+CORS = Cross Origin Resource Sharing, which is a mechanism that allows restricted resources from a specified webpage that permits requrests from certain origins ussing the HTTP Headers
+"Cross-origin resource sharing is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. 
+A web page may freely embed cross-origin images, stylesheets, scripts, iframes, and videos."
+An occurance of when web application development would need to implement CORS protection is when the cleint and server are served independelty. This will allow CORS to be established so that the server can allow the cleient to make requests.
+https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
