@@ -1,0 +1,38 @@
+Question 1: What authentication scheme is used by default in Django Rest Framework's browsable API? How is this managed?
+By deafult, the authentication used in DJANGO REST Framework browseable API is BasicAuthentication and SessionAuthentication.
+This is managed by the Token Authentication, where a user log in is signed against a username and password which results in a encrypted token that is stored as a cookie with an expiry date.
+The BasicAuthentication is a request authentication that prompts users for a username and password that doesn't involve in a cookie or session.
+
+https://sherryhsu.medium.com/session-vs-token-based-authentication-11a6c5ac45e4
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Authentication
+
+Question 2: What authentication scheme is used by httpie when querying with the -a or --auth option flag?
+The authentication scheme used is BasicAuthentication since it transmits the username and password that was provided and didn't require any cookies/token to be utilzied/created.
+
+
+Question 3: What is the difference between Session Authentication and Token Authentication? How is Token Authentication an improvement over Basic Authentication?
+For the Session Authentication, the server will create a session for the user upon logging in, where the session id is stored as a cookie.
+As for the Token Authentication, the server will create a encrypted token with an expiry date that is stored as a cookie which is used to authenticate the user requets. 
+The Token Authentication is an improvement over Basic Authentication, since it contains an encrypted cookie which  as been authenticatd the user, for each request made. 
+Since the Basic Authentication requires the server to remember the username and password, it will requried to be authenticatd for every request made by the user.  
+
+https://sherryhsu.medium.com/session-vs-token-based-authentication-11a6c5ac45e4
+
+Reference: https://security.stackexchange.com/questions/81756/session-authentication-vs-token-authentication
+
+http POST http://127.0.0.1:8000/api/snippets/ Authorization:Token\ c19be059f0aaf5bb8ea20806539ff5113953977b code="print('Token works')"
+
+
+Question 4: Provide a high level summary of what happens during an OAuth2 authentication flow. For instance: bitbucket.org > Log In > Log in with Google. What happens when I click "Log in with Google"?
+1) The user application requests the user to login by sendinding an authorization request from google
+2) The authorization is granted upon a successful authorization request
+3) The application then uses the google authorization to obtain an authentication token for bitbucket
+4) Bitbucket then provides the access token back client
+5) The token is then used to provide access to the application (Bitbucket)
+6) THe relevant content of bitbucket is then returned,
+
+https://auth0.com/docs/authorization/flows/which-oauth-2-0-flow-should-i-use
+https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
+https://darutk.medium.com/diagrams-and-movies-of-all-the-oauth-2-0-flows-194f3c3ade85
+
+Question 5: Please provide a link to your code.
