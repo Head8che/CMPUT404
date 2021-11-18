@@ -1,9 +1,16 @@
 Question 1: What do you see in the browser? When you open another tab and perform a click/drag action, what happens?
+There's a cute bunny limited within a black window/box, which can be dragged around within the window and returns some user feedback where the bear turns red when clicked on.
 
 Question 2: What are some of the differences between TypeScript and JavaScript?
+TypeScript is known as an Object-oriented programming language whereas JavaScript is a scripting language. 
+TypeScript gives support for modules whereas JavaScript does not support modules.
+Type is idealy typed, which makes it more user intuitive and easier to learn and find/fix bugs. 
+This also allows for better documentation and management of code.
 
 Question 3: Why is a web application bundler (Parcel, Webpack, Rollup, etc.) useful for modern web projects? What are some features that ParcelJS provides?
 
 Question 4: What are the different values for the readyState a WebSocket can be in? Briefly describe what each state means. (Hint: check out the Mozilla WebSocket API)
 
+
 Question 5: What's the link to your github repo?
+https://github.com/Head8che/CMPUT404/tree/master/Labs/Lab_8
