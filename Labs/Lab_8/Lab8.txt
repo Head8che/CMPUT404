@@ -1,0 +1,9 @@
+Question 1: What do you see in the browser? When you open another tab and perform a click/drag action, what happens?
+
+Question 2: What are some of the differences between TypeScript and JavaScript?
+
+Question 3: Why is a web application bundler (Parcel, Webpack, Rollup, etc.) useful for modern web projects? What are some features that ParcelJS provides?
+
+Question 4: What are the different values for the readyState a WebSocket can be in? Briefly describe what each state means. (Hint: check out the Mozilla WebSocket API)
+
+Question 5: What's the link to your github repo?
