@@ -1,3 +1,7 @@
+## https://medium.com/fusebox/beginner-web-developers-use-a-bundler-31ab0c91d2f5
+## https://betterprogramming.pub/the-battle-of-bundlers-6333a4e3eda9
+## https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/readyState
+
 Question 1: What do you see in the browser? When you open another tab and perform a click/drag action, what happens?
 There's a cute bunny limited within a black window/box, which can be dragged around within the window and returns some user feedback where the bear turns red when clicked on.
 
@@ -8,9 +12,16 @@ Type is idealy typed, which makes it more user intuitive and easier to learn and
 This also allows for better documentation and management of code.
 
 Question 3: Why is a web application bundler (Parcel, Webpack, Rollup, etc.) useful for modern web projects? What are some features that ParcelJS provides?
+Blunders are useful for modern web projects as they collect all the files in the frotnend to produce a single js file.
+It also helps developers to manage group of tools to solve related problems.
 
 Question 4: What are the different values for the readyState a WebSocket can be in? Briefly describe what each state means. (Hint: check out the Mozilla WebSocket API)
-
+CONNECTING = Socket has been created. The connection is not yet open.
+OPEN = The connection is open and ready to communicate.
+CLOSING = The connection is in the process of closing.
+CLOSED = The connection is closed or couldn't be opened.
 
 Question 5: What's the link to your github repo?
 https://github.com/Head8che/CMPUT404/tree/master/Labs/Lab_8
+
+

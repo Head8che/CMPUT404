@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 8080;
 const PUBLIC_DIR = "public";
 const STATIC_DIR = "static";
 
+
+
 /**
  * Build and minify all client code for Express
  */
@@ -32,11 +34,17 @@ function setupWSServer(server) {
     server,
     autoAcceptConnections: false
   });
+  
   let actorCoordinates = { x: 100, y: 100 };
   wss.on("connection", (ws) => {
     ws.on("message", (rawMsg) => {
       console.log(`RECV: ${rawMsg}`);
       const incommingMessage = JSON.parse(rawMsg);
+      actorCoordinates[incommingMessage.id] = {
+        x: incommingMessage.x,
+        y: incommingMessage.y,
+        frame: incommingMessage.frame
+      }
       actorCoordinates.x = incommingMessage.x;
       actorCoordinates.y = incommingMessage.y;
       wss.clients.forEach((wsClient) => {
