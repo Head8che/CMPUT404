@@ -61,6 +61,4 @@ typings/
 .next
 
 .cache
-.vscode/*
-!.vscode/settings.json
 public
